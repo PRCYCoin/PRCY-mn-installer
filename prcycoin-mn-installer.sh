@@ -47,8 +47,8 @@ readonly HOME_DIR="/usr/local/bin"
 readonly VERSION_URL="https://raw.githubusercontent.com/PRCYCoin/PRCY-mn-installer/master/VERSION"
 readonly SCRIPT_URL="https://raw.githubusercontent.com/PRCYCoin/PRCY-mn-installer/master/prcycoin-mn-installer.sh"
 readonly NEW_CHANGES_URL="https://raw.githubusercontent.com/PRCYCoin/PRCY-mn-installer/master/NEW_CHANGES"
-readonly WELCOME_MSG="                   ${ORANGE}###################################################\n                   ${ORANGE}#####WELCOME TO PRCYCoin Masternode Installer #####\n                   ${ORANGE}###################################################\n"
-WALLET_VERSION="1.0.0"
+readonly WELCOME_MSG=""
+WALLET_VERSION="1.0.0.5"
 
 # Default variables
 NET_TYPE=6
@@ -816,14 +816,14 @@ fi
 readonly CURRENT_USER_ID=$(execute_command "id -ur")
 # Welcome
 welcome_screen
-echo && echo "${GREY}///////////////////////////////////////////////////////${NONE}"
+echo && echo "${ORANGE}///////////////////////////////////////////////////////${NONE}"
 # Center-align the title
 i=1; while [ "$i" -le "$(((55-$(printf "%s" "${TITLE_STRING}" | wc -m))/2))" ]; do
   echo -n " "
   i=$(($i+1))
 done
-echo -n "${TITLE_STRING}"
-echo && echo "${GREY}///////////////////////////////////////////////////////${NONE}"
+echo -n "${ORANGE}{TITLE_STRING}"
+echo && echo "${ORANGE}///////////////////////////////////////////////////////${NONE}"
 # Wait 2 seconds with the splash screen up before starting
 sleep 2 && echo
 # Check if curl is installed
