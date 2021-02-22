@@ -14,25 +14,25 @@
 
 # Global Variables
 readonly SCRIPT_VERSION="1.1.0"
-readonly WALLET_URL_TEMPLATE="https://github.com/team-exor/exor/releases/download/\${WALLET_VERSION}/"
-readonly SOURCE_URL="https://github.com/team-exor/exor.git"
-readonly SOURCE_DIR="exor"
-readonly TITLE_STRING="Exor Masternode Installer"
+readonly WALLET_URL_TEMPLATE="https://github.com/PRCYCoin/PRCYCoin/releases/download/\${WALLET_VERSION}/"
+readonly SOURCE_URL="https://github.com/PRCYCoin/PRCYCoin.git"
+readonly SOURCE_DIR="prcycoin"
+readonly TITLE_STRING="PRCYCoin Masternode Installer"
 readonly ARCHIVE_DIR_TEMPLATE="\${WALLET_PREFIX}-\${WALLET_VERSION}"
-readonly DEFAULT_PORT_NUMBER=51572
-readonly DEFAULT_RPC_PORT=51573
-readonly DEFAULT_WALLET_DIR="Exor"
-readonly DEFAULT_DATA_DIR=".exor"
-readonly WALLET_CONFIG_NAME="exor.conf"
+readonly DEFAULT_PORT_NUMBER=59682
+readonly DEFAULT_RPC_PORT=59683
+readonly DEFAULT_WALLET_DIR="PRCYCoin"
+readonly DEFAULT_DATA_DIR=".prcycoin"
+readonly WALLET_CONFIG_NAME="prcycoin.conf"
 readonly IP4_CONFIG_NAME=".ip4.conf"
 readonly IP6_CONFIG_NAME=".ip6.conf"
 readonly NET_INTERFACE_CONFIG_NAME=".net.conf"
 readonly REBOOT_SCRIPT_NAME=".reboot.sh"
 readonly WALLET_FILE_TEMPLATE="\${WALLET_PREFIX}-\${WALLET_VERSION}-x86_64-linux-gnu.tar.gz"
-readonly WALLET_PREFIX="exor"
+readonly WALLET_PREFIX="prcycoin"
 readonly PEER_DATA_CMD="getconnectioncount"
-readonly BLOCKCOUNT_URL="https://explorer.exor.io/api/getblockcount"
-readonly RELEASES_URL="https://api.github.com/repos/team-exor/exor/releases"
+readonly BLOCKCOUNT_URL="https://explorer.prcycoin.com/api/getblockcount"
+readonly RELEASES_URL="https://api.github.com/repos/PRCYCoin/PRCYCoin/releases"
 readonly NONE="\033[00m"
 readonly ORANGE="\033[00;33m"
 readonly RED="\033[01;31m"
@@ -44,9 +44,9 @@ readonly ULINE="\033[4m"
 readonly RC_LOCAL="/etc/rc.local" # TODO: Remove this line in the near future
 readonly NETWORK_BASE_TAG="5123"
 readonly HOME_DIR="/usr/local/bin"
-readonly VERSION_URL="https://raw.githubusercontent.com/team-exor/exor-mn-installer/master/VERSION"
-readonly SCRIPT_URL="https://raw.githubusercontent.com/team-exor/exor-mn-installer/master/exor-mn-installer.sh"
-readonly NEW_CHANGES_URL="https://raw.githubusercontent.com/team-exor/exor-mn-installer/master/NEW_CHANGES"
+readonly VERSION_URL="https://raw.githubusercontent.com/PRCYCoin/PRCY-mn-installer/master/VERSION"
+readonly SCRIPT_URL="https://raw.githubusercontent.com/PRCYCoin/PRCY-mn-installer/master/prcycoin-mn-installer.sh"
+readonly NEW_CHANGES_URL="https://raw.githubusercontent.com/PRCYCoin/PRCY-mn-installer/master/NEW_CHANGES"
 readonly WELCOME_MSG="                   ${ORANGE}.:+ssssssssss+:.\n                :oys+${GREY}oosyhhhhys++${ORANGE}/oyo:\n              /hs+${GREY}odNMMMMMMMMMMMMNh+${ORANGE}/oh/\n            :hs/${GREY}hMMMMMMMMMMMMMMMMMMMMy${ORANGE}:oh:\n           oh+${GREY}sMMMMMmmNNNNNNNNNNNMMMMMMo${ORANGE}/ho\n          oh/${GREY}hMMMMMMh${ORANGE}\\-\`\`-ossss+o${GREY}MMMMMMMh${ORANGE}/do\n         -d+${GREY}sMMMMMMMMM${ORANGE}y\`\`+${GREY}MMMMMN${ORANGE}s${GREY}MMMMMMMMy${ORANGE}od-\n         yy:${GREY}MMMMMMMMMM${ORANGE}y\`\`+${GREY}MMMM${ORANGE}h${GREY}mMMMMMMMMMM${ORANGE}/hy\n         dy+${GREY}MMMMMMMMMM${ORANGE}y\`\`.+o+:o${GREY}dMMMMMMMMMM${ORANGE}ohd\n         dy+${GREY}MMMMMMMMMM${ORANGE}y.\`/${GREY}MMMm${ORANGE}y${GREY}hMMMMMMMMMM${ORANGE}ohd\n         yh:${GREY}NMMMMMMMMM${ORANGE}y..+${GREY}MMMMNNMMMMMMMMMM${ORANGE}/hy\n         -do${GREY}sMMMMMMMMM${ORANGE}y..+${GREY}MMMMMN${ORANGE}s:${GREY}NMMMMMMs${ORANGE}od-\n          oh/${GREY}yMMMMMMMh${ORANGE}/-.-+++/-./${GREY}mMMMMMMy${ORANGE}/do\n           oh+${GREY}oNMMMMMMMMMMMMMNNMMMMMMMN+${ORANGE}/do\n            :hs${GREY}+yNMMMMMMMMMMMMMMMMMMNs:${ORANGE}sh:\n              +hs${GREY}+ohNMMMMMMMMMMMMNy+/${ORANGE}sh+\n                :ohy${GREY}++oosyyyyso++/${ORANGE}sho:\n                   ./+syyyyyyyys+/.${NONE}"
 WALLET_VERSION="1.0.0"
 
@@ -537,7 +537,7 @@ remove_rc_local() {
 }
 
 add_cron_job() {
-  crontab -l | { cat; echo "@reboot sleep 30; ${HOME_DIR}/${WALLET_INSTALL_DIR}/${REBOOT_SCRIPT_NAME} "\""${CURRENT_USER}"\"" & # AUTOMATICALLY ADDED VIA exor-mn-installer.sh DO NOT REMOVE OR CHANGE MANUALLY"; } | crontab -
+  crontab -l | { cat; echo "@reboot sleep 30; ${HOME_DIR}/${WALLET_INSTALL_DIR}/${REBOOT_SCRIPT_NAME} "\""${CURRENT_USER}"\"" & # AUTOMATICALLY ADDED VIA prcycoin-mn-installer.sh DO NOT REMOVE OR CHANGE MANUALLY"; } | crontab -
 }
 
 # Check linux distribution
