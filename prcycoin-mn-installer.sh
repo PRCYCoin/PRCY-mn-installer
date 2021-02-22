@@ -47,53 +47,7 @@ readonly HOME_DIR="/usr/local/bin"
 readonly VERSION_URL="https://raw.githubusercontent.com/PRCYCoin/PRCY-mn-installer/master/VERSION"
 readonly SCRIPT_URL="https://raw.githubusercontent.com/PRCYCoin/PRCY-mn-installer/master/prcycoin-mn-installer.sh"
 readonly NEW_CHANGES_URL="https://raw.githubusercontent.com/PRCYCoin/PRCY-mn-installer/master/NEW_CHANGES"
-readonly WELCOME_MSG="                                                                                              \n
-                                                                                              \n
-                                               ..:;,,,'.                                      \n
-                                    ...   ......,lddkkxxddddo:,,.                             \n
-                                 .......      .......'',;;:ccloo;....                         \n
-                           .............  ...  ............................                   \n
-                         .;l;........   .....      ...........',;:c;.....                     \n
-                       .ldl;''.....     ........................','...                        \n
-                   .,ooo:,,''....       ...........'''.''''''''......    ..                   \n
-                .;kOo:,,,'''..    ........,,,,,;:cc:;;;;::::::cdd:..    ,xx'                  \n
-              .cO0l,,;;;,;,.  ........:llc;::;;:lllloddodxl:cxXNO:.  ...,oxl.                 \n
-            'dOx:;:ccccc;.. ....',;ldxxol:,;:::cclloodoolloOKKOd;.';c:;,':od:. ..'.           \n
-          .'lc;:looooc,.  ..',;:dOOkdocc:;'',;;:;:loolclk0X0xc''cxOkdolc;,:ddl..'kx.          \n
-         ...,codddo;.   ..',;lk00Okxooc:,'...,,;:cccldOKKkl,',o0NWWNKOxddoclxxc..lKk.         \n
-      ...':loddo:'    ...,,cO0OOkxdoc:,,'.....,::cokKX0d:,';lOXNNXNNNNKkdoc;lxd:.'l0x.        \n
-    ...'cooodo:.      ..,;c0K0Okxdl:;,'.......,:lONXkl:,.'lxxk0XXKKKXXWNkdoc;lxd:.,l0l        \n
-  .....',;cc;.       ..';o0K00kkdc:,'.........;xK0xl;,',:looodkOKKXXNKKXXkdo::lol,.,xK,       \n
-   ......,::;,,'......''cKXK0kxdc;,..... .....';:;''',;;:clllodk0KKXXXXXNN0doc:cc;..;Ok.      \n
-       ..c0KKK0Okxdlc:;;;ll:;:cc,'.... ............',,,,;:lllooxO0KXXXXNNWNOoo:;;,...:Ok,     \n
-     ....';coxk0KXXXXKOko:,.................... ...',,,;;:cloodxO0KXXXXNNNW0doc;,'....oXO.    \n
-     .,:::;...',:cldxkO0Oc,.................   .....,;;;;::cclodk0KKKXXNNXXXxol;,'....'xKl    \n
-       ,cclc.     ...''''...       .......    ......,;:;;:::clodk00KKKXXX00Xkol:,.......;,.   \n
-       .,:cl;         .....;;..      ... ...........,;,';:;;:ldxk0000K0XXOO0koc;,.....        \n
-     .;,.,::c;.          ...;,..,;'        .......',::;,;;;;:ldxkO00000XXOO0xoc;,.. ..        \n
-      .o:',;::;.           ..''':ll'        .....,;;;,,;;,;ccclodkOO000K0kkKkolc;,....        \n
-       .dc'',,;'            ....:cc:'.      .',;;;,,',,,;;:olc:cdkkkxkOOkkOOolc:;,'...        \n
-        .cl,.....            ...,:ccc:.      .;;;,,,;;,',:;col:ldoldddkOkk0xcc:,'......       \n
-         .kd'.....            ..::::co, ......'cllc:,,'';;,,;;:llcooodkkk0Oocc:,'......       \n
-          'dl...              ..,:;:::c,.;xOl'.:ol:;,,,,,,,,,;;:cllooxkkOxl:;;'.......        \n
-           .co,.                .',;:cooc:xNKl,.'llcc:;,''..''',;c:coxxkdc;,'........         \n
-            .ld;..              ..';cllloc:dXKl'.;oolcc:'.....',;;:oxkxo:;,'...''..           \n
-             .co..              .,;;;:clolc:xWOc,.:olccl:,'....,,;lxkd;,,...,,'....''.        \n
-              .:,.            ..''''.',:cclccOXkc'.;c:cc;'......,ldl:,'.',,;,'...:xO;         \n
-                            ..... ......,:loccON0c'.';:'......',;,'...,:ll:'..,oOx;.          \n
-                           ..          ...;loclONOc,....     ..... .'cddc,..:dOd;             \n
-                                          ..,cccxXOl,..          .;dxd:'.'cOKd'               \n
-                            ...              ..;:kN0c..         ,dxdc'..cONk.                 \n
-                             ........          .'cOXo..      .;lxd:..'lk0o;                   \n
-                              ...............    .','.     .;oxo;. .;kxc.                     \n
-                               .ccc,'..........',,..      ,xxc'     .'                        \n
-                                ,ldxxxl:;'.....',:c'      .;,                                 \n
-                                   ..'cllodoc:'...',.                                         \n
-                                         ...;c,.                                              \n
-                                                                                              \n
-                                                                                              \n
-                                                                                              \n
-                                                                                              \n"
+readonly WELCOME_MSG="                                                                                              \n                                                                                              \n                                               ..:;,,,'.                                      \n                                    ...   ......,lddkkxxddddo:,,.                             \n                                 .......      .......'',;;:ccloo;....                         \n                           .............  ...  ............................                   \n                         .;l;........   .....      ...........',;:c;.....                     \n                       .ldl;''.....     ........................','...                        \n                   .,ooo:,,''....       ...........'''.''''''''......    ..                   \n                .;kOo:,,,'''..    ........,,,,,;:cc:;;;;::::::cdd:..    ,xx'                  \n              .cO0l,,;;;,;,.  ........:llc;::;;:lllloddodxl:cxXNO:.  ...,oxl.                 \n            'dOx:;:ccccc;.. ....',;ldxxol:,;:::cclloodoolloOKKOd;.';c:;,':od:. ..'.           \n          .'lc;:looooc,.  ..',;:dOOkdocc:;'',;;:;:loolclk0X0xc''cxOkdolc;,:ddl..'kx.          \n         ...,codddo;.   ..',;lk00Okxooc:,'...,,;:cccldOKKkl,',o0NWWNKOxddoclxxc..lKk.         \n      ...':loddo:'    ...,,cO0OOkxdoc:,,'.....,::cokKX0d:,';lOXNNXNNNNKkdoc;lxd:.'l0x.        \n    ...'cooodo:.      ..,;c0K0Okxdl:;,'.......,:lONXkl:,.'lxxk0XXKKKXXWNkdoc;lxd:.,l0l        \n  .....',;cc;.       ..';o0K00kkdc:,'.........;xK0xl;,',:looodkOKKXXNKKXXkdo::lol,.,xK,       \n   ......,::;,,'......''cKXK0kxdc;,..... .....';:;''',;;:clllodk0KKXXXXXNN0doc:cc;..;Ok.      \n       ..c0KKK0Okxdlc:;;;ll:;:cc,'.... ............',,,,;:lllooxO0KXXXXNNWNOoo:;;,...:Ok,     \n     ....';coxk0KXXXXKOko:,.................... ...',,,;;:cloodxO0KXXXXNNNW0doc;,'....oXO.    \n     .,:::;...',:cldxkO0Oc,.................   .....,;;;;::cclodk0KKKXXNNXXXxol;,'....'xKl    \n       ,cclc.     ...''''...       .......    ......,;:;;:::clodk00KKKXXX00Xkol:,.......;,.   \n       .,:cl;         .....;;..      ... ...........,;,';:;;:ldxk0000K0XXOO0koc;,.....        \n     .;,.,::c;.          ...;,..,;'        .......',::;,;;;;:ldxkO00000XXOO0xoc;,.. ..        \n      .o:',;::;.           ..''':ll'        .....,;;;,,;;,;ccclodkOO000K0kkKkolc;,....        \n       .dc'',,;'            ....:cc:'.      .',;;;,,',,,;;:olc:cdkkkxkOOkkOOolc:;,'...        \n        .cl,.....            ...,:ccc:.      .;;;,,,;;,',:;col:ldoldddkOkk0xcc:,'......       \n         .kd'.....            ..::::co, ......'cllc:,,'';;,,;;:llcooodkkk0Oocc:,'......       \n          'dl...              ..,:;:::c,.;xOl'.:ol:;,,,,,,,,,;;:cllooxkkOxl:;;'.......        \n           .co,.                .',;:cooc:xNKl,.'llcc:;,''..''',;c:coxxkdc;,'........         \n            .ld;..              ..';cllloc:dXKl'.;oolcc:'.....',;;:oxkxo:;,'...''..           \n             .co..              .,;;;:clolc:xWOc,.:olccl:,'....,,;lxkd;,,...,,'....''.        \n              .:,.            ..''''.',:cclccOXkc'.;c:cc;'......,ldl:,'.',,;,'...:xO;         \n                            ..... ......,:loccON0c'.';:'......',;,'...,:ll:'..,oOx;.          \n                           ..          ...;loclONOc,....     ..... .'cddc,..:dOd;             \n                                          ..,cccxXOl,..          .;dxd:'.'cOKd'               \n                            ...              ..;:kN0c..         ,dxdc'..cONk.                 \n                             ........          .'cOXo..      .;lxd:..'lk0o;                   \n                              ...............    .','.     .;oxo;. .;kxc.                     \n                               .ccc,'..........',,..      ,xxc'     .'                        \n                                ,ldxxxl:;'.....',:c'      .;,                                 \n                                   ..'cllodoc:'...',.                                         \n                                         ...;c,.                                              \n                                                                                              \n                                                                                              \n                                                                                              \n                                                                                              \n"
 WALLET_VERSION="1.0.0.5"
 
 # Default variables
