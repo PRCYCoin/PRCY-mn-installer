@@ -822,7 +822,7 @@ i=1; while [ "$i" -le "$(((55-$(printf "%s" "${TITLE_STRING}" | wc -m))/2))" ]; 
   echo -n " "
   i=$(($i+1))
 done
-echo -n "${ORANGE}{TITLE_STRING}"
+echo -n "${ORANGE}${TITLE_STRING}"
 echo && echo "${ORANGE}///////////////////////////////////////////////////////${NONE}"
 # Wait 2 seconds with the splash screen up before starting
 sleep 2 && echo
